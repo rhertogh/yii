@@ -29,9 +29,9 @@
  */
 abstract class CModel extends CComponent implements IteratorAggregate, ArrayAccess
 {
-	private $_errors=array();	// attribute name => array of errors
-	private $_validators;  		// validators
-	private $_scenario='';  	// scenario
+	protected $_errors=array();	// attribute name => array of errors
+	protected $_validators;  		// validators
+	protected $_scenario='';  	// scenario
 
 	/**
 	 * Returns the list of attribute names of the model.
